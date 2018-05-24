@@ -1,0 +1,17 @@
+
+Настройки для тестирования игры 3х2:
+
+1. src/index.js:
+            class MemoryGame -> constructor -> this.game = newGame(['2D', 'AD', '7H'], 3, 2);
+
+2. webpack.config.js: 
+            output: {
+                        path: __dirname + '/test/testGame3x2/',
+                        
+3. В папку ./testGame3x2/ скопировать файлы *.css, *.html, finish.js из папки ./public/
+
+4. Выполнить команду "npm run build" 
+
+5. Вернуть всё как было! (пункт 1, 2)
+
+6. Можно запускать тесты: "npm run game3x2-test"

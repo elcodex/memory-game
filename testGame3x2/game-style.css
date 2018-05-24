@@ -1,0 +1,72 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+body {
+  background-color: #1c7430;
+}
+
+#container {
+  max-height: 100%;
+  background-color: #1c7430;
+  margin: auto 15%;
+
+  display: flex;
+  flex-flow: column;
+  -webkit-flex-flow: column;
+}
+
+#desk {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-gap: 2%;
+}
+
+#desk > .card > img {
+  max-width: 100%;
+  height: auto;
+  cursor: pointer;
+}
+
+[data-tid="Card-flipped"]:hover {
+  filter: brightness(1.2);
+  -webkit-filter: brightness(1.2);
+}
+
+#menu {
+  display: flex;
+  flex-flow: row;
+  -webkit-flex-flow: row;
+  justify-content: space-between;
+  -webkit-justify-content: space-between;
+  
+  margin: 10px 0;
+}
+
+#menu-newGame, #menu-score, #timer {
+  opacity: 0.8;
+  font: 18px "Open Sans", "sans-serif";
+  color: #fff;
+}
+
+#menu-newGame>a:visited {
+  color: #fff;
+}
+
+#menu-newGame { 
+  letter-spacing: -0.25px;
+}
+
+#menu-score {
+  letter-spacing: 0;
+}
+
+#score {
+  opacity: 0.8;
+  font: 18px "Krungthep", "sans-serif";
+  color: #fff;
+  letter-spacing: 0;
+}
